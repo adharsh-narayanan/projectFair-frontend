@@ -9,7 +9,7 @@ import { logoutResponsecontext } from '../context/ContextAPi'
 
 
 function Header() {
-  const {AuthoriseToken,setauthoriseToken}=useContext(logoutResponsecontext)
+  const {setauthoriseToken}=useContext(logoutResponsecontext)
   const navigate = useNavigate()
   const handleLogout=()=>{
     sessionStorage.removeItem("existingUser")
